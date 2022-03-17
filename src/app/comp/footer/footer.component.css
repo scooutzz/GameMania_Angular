@@ -1,0 +1,156 @@
+footer {
+    height: 100%;
+    background-color: black;
+}
+.secao_footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1700px;
+}
+
+.navegue {
+    color: white;
+    margin: 15px;
+    padding: 15px;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}
+.navegue h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.navegue a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+.recursos {
+    color: white;
+    margin: 15px;
+    padding: 15px;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}
+.recursos h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.recursos a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+.social {
+    color: white;
+    margin: 15px;
+    padding: 15px;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}
+.social h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.social a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+.loja {
+    color: white;
+    margin: 15px;
+    padding: 15px;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}
+.loja h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.loja a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+.devs {
+    color: white;
+    margin: 15px;
+    padding: 15px;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}
+.devs h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.devs a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .navegue h1 {
+        font-size: 20px;
+    }
+
+    .navegue a {
+        font-size: 16px;
+    }
+
+    .recursos h1 {
+        font-size: 20px;
+    }
+
+    .recursos a {
+        font-size: 16px;
+    }
+    
+    .social h1 {
+        font-size: 20px;
+    }
+
+    .social a {
+        font-size: 16px;
+    }
+
+    .loja h1 {
+        font-size: 20px;
+    }
+    
+    .loja a {
+        font-size: 16px;
+    }
+
+    .devs h1 {
+        font-size: 20px;
+    }
+    
+    .devs a {
+        font-size: 16px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 320px) {
+
+    .secao_footer {
+        flex-wrap: wrap;
+    }
+    
+}

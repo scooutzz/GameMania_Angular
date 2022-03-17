@@ -1,0 +1,73 @@
+.carrossel_jogar img {
+    width: 100%
+}
+
+.secao_gamepass {
+    height: 730px;
+    background-color: #212121;
+}
+.secao_gamepass p {
+    display: flex;
+    background-color: blue;
+    border-radius: 10px;
+    color:black;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    max-width: 265px;
+    margin: 10px 0 30px 35px;
+    justify-content: center;
+}
+.gamepass {
+    display: flex;
+    flex-direction: column;
+}
+.gamepass h1 {
+    margin-top: 20px;
+    background-color: blue;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 60px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    align-self: center;
+}
+.gamepass_lancamentos {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+}
+
+.gm-cont {
+    padding: 15px 15px 0 15px;
+}
+
+.gamepass_lancamentos img {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.gamepass_lancamentos h2 {
+    display: flex;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    padding: 5px;
+}
+
+.gamepass_lancamentos a {
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    background-color: blue;
+    margin: 0 30px;
+    border-radius: 15px;
+    padding: 5px;
+}

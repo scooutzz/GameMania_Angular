@@ -1,0 +1,18 @@
+.con_titulo {
+    text-align: center;
+}
+
+.con_titulo h1 {
+    background-color: #E6E6E6;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 72px;
+}
+
+.con_titulo h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.con_banner {
+    overflow: hidden;
+}

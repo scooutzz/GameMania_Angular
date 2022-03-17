@@ -1,0 +1,76 @@
+.campo input {
+    width: 290px;
+}
+
+.login-container {
+    background-color: #212121;
+    display: flex;
+    height: 640px;
+}
+
+.cadastro-cont {
+    height: 100%;
+}
+
+.cadastro {
+    margin: 50px 300px;
+}
+
+.login-cont {
+    height: 100%;
+}
+
+.login {
+    margin: 50px 300px;
+}
+
+.cadastro h2 {
+    display: flex;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.login h2 {
+    display: flex;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.campo {
+    color: white;
+    padding-top: 10px;
+    text-transform: capitalize;
+}
+
+.campo label {
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+button {
+    color: white;
+    background-color: blue;
+    border: 2px solid blue;
+    width: 100px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.senha {
+    margin-bottom: 30px;
+}

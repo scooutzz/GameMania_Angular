@@ -1,13 +1,12 @@
 <section>
     <div class="container_grid posicionamento_header">
         <a routerLink=""> <img class="logo" src="assets/img/LOGO_GAMEMANIA.svg" alt="Logo do site Game Mania"> </a>
-        <nav id="menu" class="menu">
+        <nav id="menu" class="menu" *ngIf="menuVisivel == true || tamanhoTela > 768">
             <a routerLink="jogos">Jogos</a>
             <a routerLink="dispositivos">Dispositivos</a>
             <a routerLink="login">Login</a>
         </nav>
         <a routerLink="login"><img class="usuario" src="assets/img/usuário.png" alt="Login"></a>
-        <!-- <a routerLink="#" id="barras"><img class="barras" src="assets/img/bars-solid.svg" alt="Menu de barras"></a> -->
-        <a routerLink="#" id="barras" onclick="mostrarMenu()"><img class="barras" src="assets/img/bars-solid.svg" alt="Menu de barras"></a>
+        <a id="barras" (click)="mostrarMenu()"><img class="barras" src="assets/img/bars-solid.svg" alt="Menu de barras"></a>
     </div>
 </section>

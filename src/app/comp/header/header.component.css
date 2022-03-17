@@ -50,7 +50,6 @@ section {
     }
 
     .menu {
-        display: none;
         flex-direction: column;
         width: 155px;
         height: 120px;
@@ -61,10 +60,6 @@ section {
         top: 5px;
         right: 70px;
         justify-content: start;
-    }
-
-    .menu_ativo {
-        display: flex;
     }
 
     .menu a {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,30 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  menuVisivel: boolean = false;
+  tamanhoTela: any;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.tamanhoTela = window.innerWidth;
   }
 
+  @HostListener('window:resize',['$event'])
+  onResize() {
+    this.tamanhoTela = window.innerWidth;
+  }
+ 
+  mostrarMenu() {
+    this.menuVisivel = !this.menuVisivel
+  }
 
-  // menu barras
-
-//   mostrarMenu() {
-//     if (getComputedStyle(menu).display == "none") {
-//         menu.style.display = "flex"
-//     } else {
-//         menu.style.display = "none"
-//     }
-// }
-
-// $( document ).ready(function() {
-
-//   $("#barras").click(function(){
-    
-//       $("#menu").toggleClass("menu_ativo")
-//   })
-
-// })
 
 
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from 'src/app/models/user';
+import { UserLogin } from 'src/app/models/user';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  userModel = new User("", "", "", "")
+  userModel = new UserLogin("", "")
 
   onSubmit() {
     console.log(this.userModel)

@@ -1,56 +1,25 @@
-<section class="login-container">
-    <div class="cadastro-cont">
+<div class="login-cont">
 
-        <!-- Cadastro -->
-        <form #useForm="ngForm" (ngSubmit)="onSubmit()" id="form-cadastro" class="cadastro">
+    <!-- Login -->
+    <form #useForm="ngForm" (ngSubmit)="onSubmit()" id="form-login" class="login">
 
-            <h2>cadastre-se</h2>
+        <h2>login</h2>
 
-            <div class="campo">
-                <label for="nome">nome: </label>
-                <input type="text" id="nome" name="nome" [(ngModel)]="userModel.nome" required>
-            </div>
+        <div class="campo">
+            <label for="email">email: </label>
+            <br>
+            <input type="text" id="email" name="email" [(ngModel)]="userModel.email" required>
+        </div>
 
-            <div class="campo">
-                <label for="telefone">telefone: </label>
-                <input type="tel" id="telefone" name="telefone" [(ngModel)]="userModel.telefone" required>
-            </div>
+        <div class="campo">
+            <label for="senha">senha: </label>
+            <br>
+            <input type="password" id="senha" name="senha" [(ngModel)]="userModel.senha" required>
+        </div>
 
-            <div class="campo">
-                <label for="email">email: </label>
-                <input type="text" id="email" name="email" [(ngModel)]="userModel.email" required>
-            </div>
+        <button type="submit">enviar</button>
+        <p>Não possui cadastro?<a routerLink="/cadastro">cadastre-se</a></p>
 
-            <div class="campo">
-                <label for="senha">senha: </label>
-                <input type="password" id="senha" name="senha" [(ngModel)]="userModel.senha" required>
-            </div>
+    </form>
 
-            <button type="submit">enviar</button>
-
-        </form>
-    </div>
-
-    <div class="login-cont">
-        
-        <!-- Login -->
-        <form #useForm="ngForm" (ngSubmit)="onSubmit()" id="form-cadastro" class="cadastro">
-
-            <h2>login</h2>
-
-            <div class="campo">
-                <label for="email">email: </label>
-                <input type="text" id="email" name="email" [(ngModel)]="userModel.email" required>
-            </div>
-
-            <div class="campo">
-                <label for="senha">senha: </label>
-                <input type="password" id="senha" name="senha" [(ngModel)]="userModel.senha" required>
-            </div>
-
-            <button type="submit">enviar</button>
-
-        </form>
-
-    </div>
-</section>
+</div>

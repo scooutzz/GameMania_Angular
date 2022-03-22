@@ -1,4 +1,4 @@
-.login {
+.cadastro {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,19 +6,19 @@
     background-color: white;
     border-radius: 15px;
     height: 80%;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 15px 15px 0px;
     margin-top: 30px;
-    width: 420px;
+    width: 450px;
 }
 
-.login-cont {
+.cadastro-cont {
     background-color: #212121;
     display: flex;
     justify-content: center;
     height: 640px;
 }
 
-.login h2 {
+.cadastro h2 {
     display: flex;
     color: black;
     font-family: 'Roboto', sans-serif;
@@ -26,13 +26,13 @@
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     font-size: 45px;
 }
 
 .campo {
     color: black;
-    padding-top: 20px;
+    padding-top: 5px;
     text-transform: capitalize;
 }
 

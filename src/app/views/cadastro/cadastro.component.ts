@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserCadastro } from 'src/app/models/user';
+import { CadastroService } from 'src/app/services/cadastro.service';
 
 @Component({
   selector: 'app-cadastro',
@@ -8,7 +9,8 @@ import { UserCadastro } from 'src/app/models/user';
 })
 export class CadastroComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(private cadastroService: CadastroService) { }
 
   ngOnInit(): void {
   }
@@ -19,5 +21,8 @@ export class CadastroComponent implements OnInit {
     console.log(this.userModel)
   }
 
+  
+
+ 
 
 }

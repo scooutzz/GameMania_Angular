@@ -1,25 +1,27 @@
 <div class="login-cont">
 
     <!-- Login -->
-    <form #useForm="ngForm" (ngSubmit)="onSubmit()" id="form-login" class="login">
+    <form #loginForm="ngForm" (ngSubmit)="onSubmit()" id="form-login" class="login">
 
         <h2>login</h2>
 
         <div class="campo">
             <label for="email">email: </label>
             <br>
-            <input type="text" id="email" name="email" [(ngModel)]="userModel.email" required>
+            <input type="text" id="email" name="email" placeholder="Ex.: exemplo@email.com"
+                [(ngModel)]="loginModel.email" required>
         </div>
 
         <div class="campo">
             <label for="senha">senha: </label>
             <br>
-            <input type="password" id="senha" name="senha" [(ngModel)]="userModel.senha" required>
+            <input type="password" id="senha" name="senha" placeholder="Sua senha aqui..."
+                [(ngModel)]="loginModel.password" required>
         </div>
 
         <button type="submit">enviar</button>
         <p>Não possui cadastro?<a routerLink="/cadastro">cadastre-se</a></p>
 
+        <p *ngIf=" mensagem != '' ">{{ mensagem }}</p>
     </form>
-
 </div>

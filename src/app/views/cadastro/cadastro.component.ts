@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { UserCadastro } from 'src/app/models/user';
+import { Router } from '@angular/router';
+import { Cadastro } from 'src/app/models/cadastro';
 import { CadastroService } from 'src/app/services/cadastro.service';
 
 @Component({
@@ -10,15 +11,21 @@ import { CadastroService } from 'src/app/services/cadastro.service';
 export class CadastroComponent implements OnInit {
 
 
-  constructor(private cadastroService: CadastroService) { }
+  constructor(private router: Router, private cadastroService: CadastroService) { }
 
   ngOnInit(): void {
   }
 
-  userModel = new UserCadastro("", "", "", "")
+  cadastroModel = new Cadastro()
+
+  mensagem = "";
+
 
   onSubmit() {
-    console.log(this.userModel)
+    this.cadastroService.cadastro(this.cadastroModel).subscribe( (response) => {
+      this.mensagem = "Cadastro realizado com sucesso!"
+      this.router.navigateByUrl("/")
+    } )
   }
 
   

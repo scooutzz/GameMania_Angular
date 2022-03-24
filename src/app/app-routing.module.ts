@@ -5,6 +5,7 @@ import { DispositivosComponent } from './views/dispositivos/dispositivos.compone
 import { HomeComponent } from './views/home/home.component';
 import { JogosComponent } from './views/jogos/jogos.component';
 import { LoginComponent } from './views/login/login.component';
+import { NotFoundComponent } from './views/not-found/not-found.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -12,6 +13,8 @@ const routes: Routes = [
   { path: "dispositivos", component: DispositivosComponent },
   { path: "login", component: LoginComponent },
   { path: "cadastro", component: CadastroComponent },
+  { path: "404", component: NotFoundComponent },
+  { path: "**", redirectTo: "404" }
 ];
 
 @NgModule({

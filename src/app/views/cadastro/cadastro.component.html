@@ -1,35 +1,34 @@
 <div class="cadastro-cont">
 
     <!-- Cadastro -->
-    <form #useForm="ngForm" (ngSubmit)="onSubmit()" id="form-cadastro" class="cadastro">
+    <form #cadastroForm="ngForm" (ngSubmit)="onSubmit()" id="form-cadastro" class="cadastro">
 
         <h2>cadastre-se</h2>
 
         <div class="campo">
             <label for="nome">nome: </label>
             <br>
-            <input type="text" id="nome" name="nome" [(ngModel)]="userModel.nome" required>
-        </div>
-
-        <div class="campo">
-            <label for="telefone">telefone: </label>
-            <br>
-            <input type="tel" id="telefone" name="telefone" [(ngModel)]="userModel.telefone" required>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome aqui..."
+                [(ngModel)]="cadastroModel.firstname" required>
         </div>
 
         <div class="campo">
             <label for="email">email: </label>
             <br>
-            <input type="text" id="email" name="email" [(ngModel)]="userModel.email" required>
+            <input type="text" id="email" name="email" placeholder="exemplo@email.com" [(ngModel)]="cadastroModel.email"
+                required>
         </div>
 
         <div class="campo">
             <label for="senha">senha: </label>
             <br>
-            <input type="password" id="senha" name="senha" [(ngModel)]="userModel.senha" required>
+            <input type="password" id="senha" name="senha" placeholder="Sua senha aqui..."
+                [(ngModel)]="cadastroModel.password" required>
         </div>
 
         <button type="submit">enviar</button>
+
+        <p *ngIf=" mensagem != '' ">{{ mensagem }}"></p>
 
     </form>
 </div>

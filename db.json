@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "email": "fabio@email.com",
+      "password": "$2a$10$.iQEe4t5U2vKv7CDzwlp5u4t2qBPS4Uf0g6NKl/bbaVNH.2NcmvLC",
+      "id": 1
+    },
+    {
+      "email": "admin@email.com",
+      "password": "$2a$10$6pvBikR8dkfVhyeSLBWfpOMzHanlxwQcNMGaB3DW3Rn7QC/tQlelW",
+      "firstname": "Admin",
+      "id": 2
+    },
+    {
+      "email": "hugoalves@123.com.br",
+      "password": "$2a$10$ZxyDcnQvPMrU4mkP2SKriuoPJyh2SKnB7OEVHoHc0Oi8byjgjZy86",
+      "firstname": "Hugo Alves",
+      "id": 3
+    }
+  ],
+  "noticias": [
+    {
+      "titulo": "Titulo da notícia 1",
+      "descricao": "Descrição da notícia 1",
+      "id": 1
+    }
+  ]
+}

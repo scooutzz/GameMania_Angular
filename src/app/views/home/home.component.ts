@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   constructor(private noticiaService: NoticiaService) { }
 
   ngOnInit(): void {
-    this.carregarNoticias();
+    // this.carregarNoticias();
   }
 
   carregarNoticias() {

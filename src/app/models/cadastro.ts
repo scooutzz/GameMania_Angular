@@ -1,7 +1,7 @@
-export interface Cadastro {
-    id: number;
-    usuario: string;
-    telefone: string;
-    email: string;
-    senha: string;
+export class Cadastro {
+    constructor (
+        public firstname?: string,
+        public email?: string,
+        public password?: string
+    ) {}
 }

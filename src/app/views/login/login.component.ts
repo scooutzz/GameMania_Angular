@@ -15,18 +15,31 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
- loginModel = new Login()
+  loginModel = new Login()
 
- mensagem = "";
+  mensagem = "";
 
   onSubmit() {
-    this.loginService.login(this.loginModel).subscribe( (response) => {
+    console.log("Moledo:", this.loginModel);
+
+    const listaPalavras: string[] = ["select ", "from ", "drop ", "or ", "having ", "group ", "by ", "insert ", "exec ", "\"", "\'", "--", "#", "*", ";"]
+
+    listaPalavras.forEach(palavra => {
+      if(this.loginModel.email.toLowerCase().includes(palavra)) {
+        this.mensagem = "Caractér(es) inválido(s)"
+
+        return;
+      }
+    });
+
+    this.loginService.login(this.loginModel).subscribe((response) => {
       this.mensagem = "Login realizado com sucesso!"
       this.router.navigateByUrl("/")
+
     }, (error) => {
       console.log(error)
       this.mensagem = error.error;
-    } )
+    })
   }
 
 }

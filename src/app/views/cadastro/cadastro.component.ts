@@ -22,6 +22,18 @@ export class CadastroComponent implements OnInit {
 
 
   onSubmit() {
+    console.log("Moledo:", this.cadastroModel);
+
+    const listaPalavras: string[] = ["select ", "from ", "drop ", "or ", "having ", "group ", "by ", "insert ", "exec ", "\"", "\'", "--", "#", "*", ";"]
+
+    listaPalavras.forEach(palavra => {
+      if(this.cadastroModel.email.toLowerCase().includes(palavra)) {
+        this.mensagem = "Caractér(es) inválido(s)"
+
+        return;
+      }
+    });
+
     this.cadastroService.cadastro(this.cadastroModel).subscribe( (response) => {
       this.mensagem = "Cadastro realizado com sucesso!"
       this.router.navigateByUrl("/")
